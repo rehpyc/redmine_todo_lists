@@ -13,4 +13,9 @@ Redmine::Plugin.register :redmine_todo_lists do
     permission :personal_todos, { mytodos: [:index, :new, :create, :edit, :update, :destory, :toggle_complete, :sort] }
   end
 
+  menu :top_menu, :mytodos, { controller: "mytodos", action: "index" }, caption: :my_todos_title, 
+       if: Proc.new { User.current.allowed_to?(:personal_todos, nil, global: true) }
+  menu :project_menu, :todos, { controller: "todos", action: "index" }, caption: :label_todo_plural,
+       after: :new_issue, param: :project_id
+
 end

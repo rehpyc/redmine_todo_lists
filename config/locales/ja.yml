@@ -1,4 +1,7 @@
 ja:
+  label_todo_plural:         TODO
+  my_todos_title:            マイ TODO
+
   permission_view_todos:     TODO の閲覧
   permission_edit_todos:     TODO の編集
   permission_personal_todos: マイ TODO の使用

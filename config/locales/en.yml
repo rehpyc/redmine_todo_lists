@@ -1,4 +1,8 @@
 en:
+  label_todo_plural:         Todos
+  my_todos_title:            My Todos
+
+
   permission_view_todos:     View todos
   premission_edit_todos:     Edit todos
   permission_personal_todos: Use personal todos
