@@ -1,3 +1,4 @@
-# English strings go here for Rails i18n
 en:
-  # my_label: "My label"
+  permission_view_todos:     View todos
+  premission_edit_todos:     Edit todos
+  permission_personal_todos: Use personal todos
